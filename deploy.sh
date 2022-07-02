@@ -6,6 +6,9 @@ set -e
 # build
 pnpm build
 
+# copy cname
+cp CNAME .vitepress/dist
+
 # navigate into the build output directory
 cd .vitepress/dist
 
