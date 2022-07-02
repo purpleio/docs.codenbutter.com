@@ -30,13 +30,17 @@ Codenbutter SDK를 사용하려면 기본으로 제공되는 스크립트 대신
 
 **옵션**
 
-| 파라미터    | 타입     | 설명                  | 필수     | 예시          |
-| ----------- | -------- | --------------------- | -------- | ------------- |
-| siteId      | String   | 사이트 아이디         | 필수     | sample        |
-| auto        | Boolean  | 팝업 호출 유무        | 필수아님 | false(기본값) |
-| ignoreTrack | Boolean  | 트래킹 실행 유무      | 필수아님 | false(기본값) |
-| onSuccess   | Function | 함수 호출 성공시 콜백 | 필수아님 | -             |
-| onError     | Function | 함수 호출 실패시 콜백 | 필수아님 | -             |
+<div class="table-wrapper">
+
+| 속성        | 타입               | 설명                  | 필수 | 기본값 |
+| ----------- | ------------------ | --------------------- | ---- | ------ |
+| siteId      | string             | 사이트 아이디         | ✓    | -      |
+| auto        | boolean            | 팝업 호출 유무        |      | false  |
+| ignoreTrack | boolean            | 트래킹 실행 유무      |      | false  |
+| onSuccess   | () => void         | 함수 호출 성공시 콜백 |      | -      |
+| onError     | (e: Error) => void | 함수 호출 실패시 콜백 |      | -      |
+
+</div>
 
 ```js
 // default
@@ -56,11 +60,11 @@ Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
 
 **옵션**
 
-| 파라미터  | 타입     | 설명                        | 필수     | 예시   |
-| --------- | -------- | --------------------------- | -------- | ------ |
-| id        | String   | 캠페인 아이디 (없으면 전체) | 필수아님 | sample |
-| onSuccess | Function | 함수 호출 성공시 콜백       | 필수아님 | -      |
-| onError   | Function | 함수 호출 실패시 콜백       | 필수아님 | -      |
+| 속성      | 타입               | 설명                        | 필수 | 기본값 |
+| --------- | ------------------ | --------------------------- | ---- | ------ |
+| id        | string             | 캠페인 아이디 (없으면 전체) |      | -      |
+| onSuccess | () => void         | 함수 호출 성공시 콜백       |      | -      |
+| onError   | (e: Error) => void | 함수 호출 실패시 콜백       |      | -      |
 
 ```js
 // default

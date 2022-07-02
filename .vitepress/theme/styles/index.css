@@ -2,3 +2,16 @@
 @import "./options-boxes.css";
 @import "./utilities.css";
 @import "./medium-zoom.css";
+
+.vt-doc .table-wrapper {
+  overflow-x: auto;
+}
+
+.vt-doc table {
+  overflow-x: overflow;
+  min-width: 550px;
+}
+
+.vt-doc table td {
+  min-width: 70px;
+}
