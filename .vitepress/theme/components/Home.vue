@@ -89,8 +89,8 @@ const sampleImages = [
     </p>
   </section>
 
-  <div className="main-video-wrapper">
-    <div className="main-video">
+  <div class="main-video-wrapper">
+    <div class="main-video">
       <iframe 
         width="560"
         height="350"
