@@ -56,11 +56,11 @@ Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
 
 **옵션**
 
-| 파라미터  | 타입     | 설명                  | 필수     | 예시   |
-| --------- | -------- | --------------------- | -------- | ------ |
-| id        | String   | 캠페인 아이디         | 필수     | sample |
-| onSuccess | Function | 함수 호출 성공시 콜백 | 필수아님 | -      |
-| onError   | Function | 함수 호출 실패시 콜백 | 필수아님 | -      |
+| 파라미터  | 타입     | 설명                        | 필수     | 예시   |
+| --------- | -------- | --------------------------- | -------- | ------ |
+| id        | String   | 캠페인 아이디 (없으면 전체) | 필수아님 | sample |
+| onSuccess | Function | 함수 호출 성공시 콜백       | 필수아님 | -      |
+| onError   | Function | 함수 호출 실패시 콜백       | 필수아님 | -      |
 
 ```js
 // default
