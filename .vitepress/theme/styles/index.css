@@ -15,3 +15,8 @@
 .vt-doc table td {
   min-width: 70px;
 }
+
+.VPApp .vt-doc th,
+.VPApp .vt-doc td {
+  padding: 0.3em 0.7em;
+}
