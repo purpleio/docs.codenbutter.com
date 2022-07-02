@@ -1,0 +1,26 @@
+{
+  "name": "codenbutter-docs",
+  "version": "1.0.0",
+  "description": "Codenbutter Docs",
+  "repository": "https://github.com/purpleio/docs.codenbutter.com",
+  "author": "subicura",
+  "scripts": {
+    "convert": "node script/convert.mjs",
+    "dev": "vitepress",
+    "build": "vitepress build && rimraf dist && mkdir -p dist && mv .vitepress/dist dist",
+    "serve": "vitepress serve"
+  },
+  "dependencies": {
+    "@subicura/vitepress-theme": "^1.0.5",
+    "medium-zoom": "^1.0.6",
+    "vitepress": "^0.22.3",
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^7.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
