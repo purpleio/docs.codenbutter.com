@@ -89,6 +89,19 @@ const sampleImages = [
     </p>
   </section>
 
+  <div className="main-video-wrapper">
+    <div className="main-video">
+      <iframe 
+        width="560"
+        height="350"
+        src="https://www.youtube.com/embed/fYE7L5775aE?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
   <div class="template-list">
     <div class="slider">
       <div class="slide-track" :style="{ width: (fullWidth * 2) + 'px' }">
@@ -121,6 +134,25 @@ section {
 #hero {
   padding: 96px 32px;
   text-align: center;
+}
+
+.main-video-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.main-video {
+  position: relative;
+  padding-bottom: 62.5%;
+  overflow: hidden;
+}
+
+.main-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .tagline {
