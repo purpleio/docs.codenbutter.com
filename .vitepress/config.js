@@ -29,8 +29,8 @@ export default {
   extends: baseConfig,
 
   lang: "ko-KR",
-  title: "코드앤버터 가이드",
-  description: "코드앤버터 가이드 / codenbutter guide",
+  title: "코드앤버터 안내서",
+  description: "코드앤버터 안내서 / codenbutter guide",
   srcDir: "src",
   scrollOffset: "header",
 
@@ -72,7 +72,22 @@ export default {
         color: "#5bbad5",
       },
     ],
-    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    [
+      "meta",
+      {
+        name: "theme-color",
+        content: "#ffffff",
+        media: "(prefers-color-scheme: light)",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "theme-color",
+        content: "#1a1a1a",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
       "meta",
