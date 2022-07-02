@@ -7,7 +7,7 @@ set -e
 pnpm build
 
 # navigate into the build output directory
-cd dist
+cd .vitepress/dist
 
 git init
 git add -A

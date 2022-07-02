@@ -5,9 +5,8 @@
   "repository": "https://github.com/purpleio/docs.codenbutter.com",
   "author": "subicura",
   "scripts": {
-    "convert": "node script/convert.mjs",
     "dev": "vitepress",
-    "build": "vitepress build && rimraf dist && mkdir -p dist && mv .vitepress/dist dist",
+    "build": "vitepress build",
     "serve": "vitepress serve"
   },
   "dependencies": {
