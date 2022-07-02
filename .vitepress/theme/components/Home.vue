@@ -346,6 +346,16 @@ html:not(.dark) .accent,
   z-index: 2;
 }
 
+html.dark .slider::before,
+html.dark .slider::after {
+  background: linear-gradient(to right, #1a1a1a 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
 .slider::after {
   right: 0;
   top: 0;
