@@ -60,11 +60,15 @@ Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
 
 **옵션**
 
+<div class="table-wrapper">
+
 | 속성      | 타입               | 설명                        | 필수 | 기본값 |
 | --------- | ------------------ | --------------------------- | ---- | ------ |
 | id        | string             | 캠페인 아이디 (없으면 전체) |      | -      |
 | onSuccess | () => void         | 함수 호출 성공시 콜백       |      | -      |
 | onError   | (e: Error) => void | 함수 호출 실패시 콜백       |      | -      |
+
+</div>
 
 ```js
 // default
