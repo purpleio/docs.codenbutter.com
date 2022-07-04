@@ -2,25 +2,40 @@ import baseConfig from "@subicura/vitepress-theme/config";
 
 const nav = [
   {
-    text: "📔 SDK 개발자 문서",
+    text: "📔 사용자 가이드",
     activeMatch: `^/guide/`,
-    link: "/guide/hello",
+    link: "/guide/intro",
+  },
+  {
+    text: "🧑‍💻 개발자 문서",
+    activeMatch: `^/developer/`,
+    link: "/developer/helloworld",
+  },
+  {
+    text: "💡 업데이트",
+    activeMatch: `^/update/`,
+    link: "/update/latest",
+  },
+  {
+    text: "👏",
+    activeMatch: `^/thanks/`,
+    link: "/thanks/special-thanks-to",
   },
 ];
 
 export const sidebar = {
-  "/guide/": getGuideSidebar(),
+  "/developer/": getDeveloperSidebar(),
 };
 
-function getGuideSidebar() {
+function getDeveloperSidebar() {
   return [
     {
       text: "들어가기",
-      items: [{ text: "SDK 안내", link: "/guide/hello" }],
+      items: [{ text: "SDK 안내", link: "/developer/helloworld" }],
     },
     {
       text: "SDK Reference",
-      items: [{ text: "Codenbutter", link: "/guide/js" }],
+      items: [{ text: "Codenbutter", link: "/developer/js" }],
     },
   ];
 }
@@ -180,7 +195,7 @@ export default {
     },
 
     footer: {
-      copyright: `Copyright © 2022-${new Date().getFullYear()} purpleio`,
+      copyright: `Copyright © ${new Date().getFullYear()} purpleio`,
     },
   },
   vite: {

@@ -102,6 +102,30 @@ const sampleImages = [
     </div>
   </div>
 
+  <section id="highlights" class="vt-box-container">
+    <div class="vt-box">
+      <h2>📔 사용자 가이드</h2>
+      <p>
+        코드앤버터를 소개하고 사용법을 알아봅니다.<br />
+        <a href="/guide/intro" style="text-decoration: underline">더보기→</a>
+      </p>
+    </div>
+    <div class="vt-box">
+      <h2>🧑‍💻 개발자 문서</h2>
+      <p>
+        웹사이트에 스크립트를 추가하고 제어하는 방법을 알아봅니다.<br />
+        <a href="/developer/helloworld" style="text-decoration: underline">더보기→</a>
+      </p>
+    </div>
+    <div class="vt-box">
+      <h2>💡 업데이트</h2>
+      <p>
+        새롭게 추가된 기능을 알아보세요.<br />
+        <a href="/update/latest" style="text-decoration: underline">더보기→</a>
+      </p>
+    </div>
+  </section>
+
   <div class="template-list">
     <div class="slider">
       <div class="slide-track" :style="{ width: (fullWidth * 2) + 'px' }">
@@ -128,7 +152,7 @@ const sampleImages = [
 
 <style scoped>
 section {
-  padding: 42px 32px;
+  padding: 50px 32px 30px;
 }
 
 #hero {
@@ -137,7 +161,7 @@ section {
 }
 
 .main-video-wrapper {
-  max-width: 500px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
@@ -145,6 +169,8 @@ section {
   position: relative;
   padding-bottom: 62.5%;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0.2px 0.2px 0 rgba(0, 0, 0, 0.014), 0 0.7px 0.5px 0 rgba(0, 0, 0, 0.02), 0 1.3px 0.9px 0 rgba(0, 0, 0, 0.025), 0 2.1px 1.6px 0 rgba(0, 0, 0, 0.03), 0 3.2px 2.9px 0 rgba(0, 0, 0, 0.036), 0 5px 7px 0 rgba(0, 0, 0, 0.05);
 }
 
 .main-video iframe {

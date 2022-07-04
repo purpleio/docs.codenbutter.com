@@ -1,6 +1,6 @@
 ---
 page: true
-tagline: CODE N BUTTER Guide
+tagline: 웹사이트를 꾸미는 가장 쉬운 방법
 actionText: 📖 시작하기
 actionLink: /guide/hello
 
