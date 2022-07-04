@@ -24,18 +24,48 @@ const nav = [
 ];
 
 export const sidebar = {
+  "/guide/": getGuideSidebar(),
   "/developer/": getDeveloperSidebar(),
 };
+
+function getGuideSidebar() {
+  return [
+    {
+      text: "소개",
+      items: [
+        { text: "코드앤버터 소개", link: "/guide/intro" },
+        { text: "도구 비교하기", link: "/guide/vs-other-apps" },
+      ],
+    },
+    {
+      text: "사용 가이드",
+      items: [
+        { text: "기본 사용법", link: "/guide/basic" },
+        { text: "자주 묻는 질문", link: "/guide/faq" },
+      ],
+    },
+  ];
+}
 
 function getDeveloperSidebar() {
   return [
     {
-      text: "들어가기",
-      items: [{ text: "SDK 안내", link: "/developer/helloworld" }],
+      text: "소개",
+      items: [
+        { text: "개발자 문서 안내", link: "/developer/helloworld" },
+        { text: "동작방식 소개", link: "/developer/how-to-work" },
+      ],
     },
     {
       text: "SDK Reference",
-      items: [{ text: "Codenbutter", link: "/developer/js" }],
+      items: [
+        { text: "스크립트 추가", link: "/developer/script" },
+        { text: "Javascript SDK", link: "/developer/js-sdk" },
+      ],
+    },
+    {
+      text: "채용",
+      items: [{ text: "채용 안내", link: "/developer/recruit" }],
     },
   ];
 }
@@ -116,15 +146,6 @@ export default {
       },
     ],
     ["meta", { name: "msapplication-TileColor", content: "#000000" }],
-    [
-      "script",
-      {
-        src: "https://distinct-protected.subicura.dev/script.js",
-        "data-site": "AIERDXCX",
-        "data-spa": "auto",
-        defer: "",
-      },
-    ],
     [
       "meta",
       {

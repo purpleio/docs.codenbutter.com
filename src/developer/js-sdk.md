@@ -2,13 +2,13 @@
 head:
   - - meta
     - property: "og:description"
-      content: Codenbutter SDK reference
+      content: 코드앤버터 Javascript SDK
   - - meta
     - property: "twitter:description"
-      content: Codenbutter SDK reference
+      content: 코드앤버터 Javascript SDK
 ---
 
-# Codenbutter SDK
+# Javascript SDK
 
 SDK를 사용하면 코드앤버터의 모든 기능을 사용할 수 있습니다.
 
@@ -16,7 +16,7 @@ SDK를 사용하면 코드앤버터의 모든 기능을 사용할 수 있습니�
 
 Codenbutter SDK를 사용하려면 기본으로 제공되는 스크립트 대신 다음 스크립트를 입력해주세요.
 
-<<< @/snippets/script.js
+<<< @/snippets/sdk-script.js
 
 ## API
 
@@ -44,13 +44,13 @@ Codenbutter SDK를 사용하려면 기본으로 제공되는 스크립트 대신
 
 ```js
 // default
-Codenbutter("boot", { siteId: "sample" });
+Codenbutter("boot", { siteId: "SITE-ID" });
 
 // 자동으로 팝업 호출시 -> SDK 대신 기본 스크립트 호출 권장
-Codenbutter("boot", { siteId: "sample", auto: true });
+Codenbutter("boot", { siteId: "SITE-ID", auto: true });
 
 // 트래킹 기능 끄기
-Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
+Codenbutter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 ```
 
 ### mount
@@ -62,11 +62,11 @@ Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
 
 <div class="table-wrapper">
 
-| 속성      | 타입               | 설명                        | 필수 | 기본값 |
-| --------- | ------------------ | --------------------------- | ---- | ------ |
-| id        | string             | 캠페인 아이디 (없으면 전체) |      | -      |
-| onSuccess | () => void         | 함수 호출 성공시 콜백       |      | -      |
-| onError   | (e: Error) => void | 함수 호출 실패시 콜백       |      | -      |
+| 속성      | 타입               | 설명                              | 필수 | 기본값 |
+| --------- | ------------------ | --------------------------------- | ---- | ------ |
+| id        | string             | 캠페인(팝업) 아이디 (없으면 전체) |      | -      |
+| onSuccess | () => void         | 함수 호출 성공시 콜백             |      | -      |
+| onError   | (e: Error) => void | 함수 호출 실패시 콜백             |      | -      |
 
 </div>
 
@@ -75,5 +75,5 @@ Codenbutter("boot", { siteId: "sample", ignoreTrack: true });
 Codenbutter("mount");
 
 // 특정 캠페인 호출
-Codenbutter("mount", { id: "sample" });
+Codenbutter("mount", { id: "CAMPAIGN-ID" });
 ```
