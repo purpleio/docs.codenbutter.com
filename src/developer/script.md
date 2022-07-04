@@ -39,7 +39,7 @@ script.async = 1;
 document.head.appendChild(script);
 ```
 
-1. `HTML`을 추가할 수 없는 경우 사용합니다.
+1. `HTML` 태그를 추가할 수 없는 경우 사용합니다.
 2. 사용중인 스크립트 코드에 추가하거나 script 태그 사이에 입력합니다. (`<SCRIPT>`와 `</SCRIPT>` 사이)
 3. `SITE-ID` 부분을 웹사이트 아이디로 변경합니다.
 
