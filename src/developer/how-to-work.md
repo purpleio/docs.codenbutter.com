@@ -12,15 +12,143 @@ head:
 
 코드앤버터의 동작방식을 소개합니다.
 
-## 팝업 작성
+## Document Data
 
-1. 에디터에서 만든 `Frame` / `Text` / `Image`를 `Codenbutter Document Data` 형식으로 저장합니다.
-2. 팝업을 공개하면 `Codenbutter Document Data`와 `Meta Data`를 합쳐 `JSON 설정 파일`을 생성합니다.
-3. `JSON 설정 파일`을 AWS S3에 업로드하여 정적파일로 제공합니다.
+코드앤버터의 컴포넌트 데이터는 여러개의 `Node`가 `Tree 형태`로 구성되어 있습니다.  
+각 Node의 속성은 DOM 구조를 표현하는 데 사용되며, 에디터와 렌더링 엔진에서 사용합니다.
 
-## 렌더링
+**노드 종류**
 
-1. 웹사이트에 스크립트를 추가하면 `JSON 설정 파일`을 조회합니다.
-2. `JSON 설정 파일`을 분석하여 `iframe`을 만들고 데이터를 전송합니다.
-3. `iframe`에서 데이터를 분석하여 svelte 기반의 컴포넌트를 생성합니다.
-4. `스크립트`와 `iframe`은 이벤트를 주고 받으면서 필요한 기능을 실행합니다.
+- `DocumentNode` - 기본적인 문서 속성을 표현
+- `FrameNode` - 영역 및 레이아웃을 표현하기 위한 노드로 여러개의 자식 노드를 포함
+- `TextNode` - 글자를 표현하기 위한 노드
+- `ImageNode` - 이미지를 표현하기 위한 노드
+
+**트리 형태 샘플**
+
+```
+Document
+├─ Frame
+│  ├─ Frame
+│  │  └─ Image
+│  └─ Text
+├─ Text
+└─ ...
+```
+
+**이미지 노드 데이터 샘플**
+
+```json
+{
+  "id": "gut5Boz5ne4D5eFemmThz5",
+  "name": "닫기 버튼 이미지",
+  "type": "IMAGE",
+  "fills": [
+    {
+      "path": "https://codenbutter-upload.test.purple.io/upload/node/2022/bfddf11e-fb08-4d06-a809-4e517ee8e03b.svg",
+      "type": "IMAGE",
+      "width": {
+        "unit": "px",
+        "value": 27
+      },
+      "height": {
+        "unit": "px",
+        "value": 27
+      },
+      "fileType": "svg",
+      "scaleMode": "FILL"
+    }
+  ],
+  "width": {
+    "unit": "px",
+    "value": 42
+  },
+  "padding": {
+    "top": {
+      "unit": "px",
+      "value": 14
+    },
+    "left": {
+      "unit": "px",
+      "value": 14
+    },
+    "right": {
+      "unit": "px",
+      "value": 14
+    },
+    "bottom": {
+      "unit": "px",
+      "value": 14
+    }
+  },
+  "visible": true,
+  "reactions": [
+    {
+      "action": {
+        "type": "CLOSE"
+      },
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    }
+  ],
+  "pluginData": {},
+  "alignHorizontal": "RIGHT"
+}
+```
+
+## Campaign Data
+
+캠페인 데이터는 디자인을 제외한 기본 속성과 노출 속성등을 가지고 있습니다.
+
+**캠페인 속성**
+
+- `id` - 캠페인 식별자
+- `publicId` - 공개적으로 사용하는 아이디
+- `name` - 캠페인 이름
+- `type` - 캠페인 종류(POPUP, ...)
+- `schedule` - 노출 기간 설정
+- `target` - 노출 조건 설정 (페이지, 사용자, 레퍼러, ...)
+- `display` - 노출 방식 설정 (바로 노출, n초 후, 스크롤시, ...)
+
+**노출 조건**
+
+노출 조건은 `AND`, `OR`, `CONDITION`의 `Tree 형태`로 표현합니다.  
+다양한 조합을 표현할 수 있습니다.
+
+```json
+{
+  "type": "OR",
+  "value": [
+    {
+      "type": "AND",
+      "value": [
+        { "type": "URL", "operator": "STARTS_WITH", "value": "/Product" },
+        {
+          "type": "OR",
+          "value": [
+            { "type": "URL", "operator": "INCLUDE", "value": "CODE_1" },
+            { "type": "URL", "operator": "INCLUDE", "value": "CODE_2" },
+            { "type": "URL", "operator": "INCLUDE", "value": "CODE_3" }
+          ]
+        }
+      ]
+    },
+    { "type": "URL", "operator": "EQUAL", "value": "/MyPage" }
+  ]
+}
+```
+
+## Javascript SDK
+
+코드앤버터에서 제공하는 스크립트를 웹페이지에 추가하면 캠페인 정보를 조회하고 조건에 맞는 DOM을 생성하여 웹페이지에 삽입합니다.
+
+**주요 모듈**
+
+- `코어` - 캠페인 데이터 조회 및 분석
+- `컴포넌트 매니저` - DOM을 생성하고 생성한 DOM과 웹사이트간의 이벤트 송수신 처리
+- `분석도구` - 캠페인 노출 데이터 수집 및 분석
+
+## Component Renderer
+
+[Document Data](#document-data)에서 분석하여 DOM을 렌더링하는 svelte 기반 라이브러리입니다.
