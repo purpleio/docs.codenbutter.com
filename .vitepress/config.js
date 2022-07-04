@@ -147,6 +147,19 @@ export default {
     ],
     ["meta", { name: "msapplication-TileColor", content: "#000000" }],
     [
+      "script",
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-H28KQ7ZRGD",
+        async: true,
+      },
+    ],
+    [
+      "script",
+      {
+        src: "/js/analytics.js",
+      },
+    ],
+    [
       "meta",
       {
         name: "og:image",
