@@ -24,9 +24,19 @@
 .vt-doc .img-320 img {
   max-width: 320px;
 }
-
+.vt-doc .img-400 img {
+  max-width: 400px;
+}
+.vt-doc .img-480 img {
+  max-width: 480px;
+}
 .vt-doc img {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0.2px 0.2px 0 rgba(0, 0, 0, 0.014), 0 0.7px 0.5px 0 rgba(0, 0, 0, 0.02), 0 1.3px 0.9px 0 rgba(0, 0, 0, 0.025), 0 2.1px 1.6px 0 rgba(0, 0, 0, 0.03), 0 3.2px 2.9px 0 rgba(0, 0, 0, 0.036), 0 5px 7px 0 rgba(0, 0, 0, 0.05);
+}
+
+.vt-doc .no-shadow img {
+  border-radius: 0;
+  box-shadow: none;
 }

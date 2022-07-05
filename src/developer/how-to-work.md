@@ -14,6 +14,19 @@ head:
 
 [[toc]]
 
+## 동작방식
+
+<div className="img-480 no-shadow">
+
+![동작흐름](./imgs/how-to-work/diagram.png)
+
+</div>
+
+1. 코드앤버터 관리자 페이지에서 캠페인을 생성합니다.
+2. 캠페인은 [Document Data](#document-data)와 [Campaign Data](#campaign-data)로 이루어져 있습니다.
+3. 캠페인을 공개하면 `campaign.json` 파일이 생성됩니다.
+4. 웹페이지에 추가된 Javascript SDK가 파일을 분석하여 컴포넌트를 생성합니다.
+
 ## Document Data
 
 코드앤버터의 컴포넌트 데이터는 여러개의 `Node`가 `Tree 형태`로 구성되어 있습니다.  
@@ -145,12 +158,15 @@ Document
 
 코드앤버터에서 제공하는 스크립트를 웹페이지에 추가하면 캠페인 정보를 조회하고 조건에 맞는 DOM을 생성하여 웹페이지에 삽입합니다.
 
+<div className="img-480 no-shadow">
+
+![동작흐름](./imgs/how-to-work/sdk.png)
+
+</div>
+
 **주요 모듈**
 
 - `코어` - 캠페인 데이터 조회 및 분석
+- `수집분석도구` - 캠페인 노출 데이터 수집 및 분석
 - `컴포넌트 매니저` - DOM을 생성하고 생성한 DOM과 웹사이트간의 이벤트 송수신 처리
-- `분석도구` - 캠페인 노출 데이터 수집 및 분석
-
-## Component Renderer
-
-[Document Data](#document-data)에서 분석하여 DOM을 렌더링하는 svelte 기반 라이브러리입니다.
+- `컴포넌트` - Svelte 기반 DOM을 렌더링하는 라이브러리
