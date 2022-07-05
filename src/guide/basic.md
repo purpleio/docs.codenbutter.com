@@ -32,7 +32,7 @@ head:
 
 4. 웹사이트에 팝업이 나타납니다.
 
-<div className="img-320">
+<div class="img-320">
 
 ![팝업 추가](./imgs/basic/preview.png)
 

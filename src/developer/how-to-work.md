@@ -16,7 +16,7 @@ head:
 
 ## 동작방식
 
-<div className="img-480 no-shadow">
+<div class="img-480 no-shadow">
 
 ![동작흐름](./imgs/how-to-work/diagram.png)
 
@@ -158,7 +158,7 @@ Document
 
 코드앤버터에서 제공하는 스크립트를 웹페이지에 추가하면 캠페인 정보를 조회하고 조건에 맞는 DOM을 생성하여 웹페이지에 삽입합니다.
 
-<div className="img-480 no-shadow">
+<div class="img-480 no-shadow">
 
 ![동작흐름](./imgs/how-to-work/sdk.png)
 
