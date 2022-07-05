@@ -46,13 +46,13 @@ Codenbutter SDK를 사용하려면 기본으로 제공되는 스크립트 대신
 
 ```js
 // default
-Codenbutter("boot", { siteId: "SITE-ID" });
+CodenButter("boot", { siteId: "SITE-ID" });
 
 // 자동으로 팝업 호출시 -> SDK 대신 기본 스크립트 호출 권장
-Codenbutter("boot", { siteId: "SITE-ID", auto: true });
+CodenButter("boot", { siteId: "SITE-ID", auto: true });
 
 // 트래킹 기능 끄기
-Codenbutter("boot", { siteId: "SITE-ID", ignoreTrack: true });
+CodenButter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 ```
 
 ### mount
@@ -74,8 +74,8 @@ Codenbutter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 
 ```js
 // default
-Codenbutter("mount");
+CodenButter("mount");
 
 // 특정 캠페인 호출
-Codenbutter("mount", { id: "CAMPAIGN-ID" });
+CodenButter("mount", { id: "CAMPAIGN-ID" });
 ```
