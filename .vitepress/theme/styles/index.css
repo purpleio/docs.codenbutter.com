@@ -22,13 +22,13 @@
 }
 
 .vt-doc .img-320 img {
-  max-width: 320px;
+  width: 320px;
 }
 .vt-doc .img-400 img {
-  max-width: 400px;
+  width: 400px;
 }
 .vt-doc .img-480 img {
-  max-width: 480px;
+  width: 480px;
 }
 .vt-doc img {
   overflow: hidden;
