@@ -12,6 +12,10 @@ head:
 
 [[toc]]
 
+## 2022.07.07
+
+- ✨ oopy 연동 가이드 추가
+
 ## 2022.07.06
 
 - ✨ JS SDK alias 추가 (CodenButter, Codenbutter, CodeNButter)
