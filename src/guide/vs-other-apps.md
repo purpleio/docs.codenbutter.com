@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/guide/vs-other-apps.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/guide/vs-other-apps.html
+  - - meta
     - property: "og:description"
       content: 도구 비교하기
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 도구 비교하기
 ---
 

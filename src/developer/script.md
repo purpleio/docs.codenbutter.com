@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/developer/script.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/developer/script.html
+  - - meta
     - property: "og:description"
       content: 스크립트 추가
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 스크립트 추가
 ---
 

@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/guide/basic.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/guide/basic.html
+  - - meta
     - property: "og:description"
       content: 코드앤버터 기본 사용법
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 코드앤버터 기본 사용법
 ---
 

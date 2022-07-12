@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/thanks/special-thanks-to.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/thanks/special-thanks-to.html
+  - - meta
     - property: "og:description"
       content: Special Thanks To
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: Special Thanks To
 ---
 

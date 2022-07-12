@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/update/latest.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/update/latest.html
+  - - meta
     - property: "og:description"
       content: 업데이트 내역
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 업데이트 내역
 ---
 

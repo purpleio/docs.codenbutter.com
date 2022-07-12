@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/developer/helloworld.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/developer/helloworld.html
+  - - meta
     - property: "og:description"
       content: 개발자 문서 안내
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 개발자 문서 안내
 ---
 

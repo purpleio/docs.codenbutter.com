@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/developer/js-sdk.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/developer/js-sdk.html
+  - - meta
     - property: "og:description"
       content: 코드앤버터 Javascript SDK
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 코드앤버터 Javascript SDK
 ---
 

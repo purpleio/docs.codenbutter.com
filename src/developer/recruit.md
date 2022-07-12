@@ -1,10 +1,16 @@
 ---
 head:
   - - meta
+    - property: "og:url"
+      content: https://docs.codenbutter.com/developer/recruit.html
+  - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/developer/recruit.html
+  - - meta
     - property: "og:description"
       content: 채용
   - - meta
-    - property: "twitter:description"
+    - name: "twitter:description"
       content: 채용
 ---
 
