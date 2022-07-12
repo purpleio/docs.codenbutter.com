@@ -4,6 +4,9 @@ head:
     - property: "og:url"
       content: https://docs.codenbutter.com/developer/how-to-work.html
   - - meta
+    - name: "twitter:url"
+      content: https://docs.codenbutter.com/developer/how-to-work.html
+  - - meta
     - property: "og:description"
       content: 동작방식 소개
   - - meta
