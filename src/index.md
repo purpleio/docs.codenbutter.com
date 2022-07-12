@@ -5,7 +5,7 @@ actionText: 📖 시작하기
 actionLink: /guide/intro
 
 description: 코드앤버터 안내서
-image: /imgs/share.png
+image: /imgs/og.png
 aside: false
 ---
 
