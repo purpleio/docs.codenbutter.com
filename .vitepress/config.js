@@ -170,7 +170,7 @@ export default {
       "meta",
       {
         property: "og:image",
-        content: "https://docs.codenbutter.com/imgs/og.png",
+        content: "https://upload.codenbutter.com/logo/og.png",
       },
     ],
     [
@@ -198,7 +198,7 @@ export default {
       "meta",
       {
         name: "twitter:image",
-        content: "https://docs.codenbutter.com/imgs/og.png",
+        content: "https://upload.codenbutter.com/logo/og.png",
       },
     ],
     [
