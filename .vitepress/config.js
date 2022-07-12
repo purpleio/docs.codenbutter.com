@@ -162,6 +162,13 @@ export default {
     [
       "meta",
       {
+        name: "og:title",
+        content: "코드앤버터 안내서",
+      },
+    ],
+    [
+      "meta",
+      {
         name: "og:image",
         content: "https://docs.codenbutter.com/imgs/share.png",
       },
@@ -177,6 +184,13 @@ export default {
       "meta",
       {
         name: "og:site_name",
+        content: "코드앤버터 안내서",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "twitter:title",
         content: "코드앤버터 안내서",
       },
     ],
