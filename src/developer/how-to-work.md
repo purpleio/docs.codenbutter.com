@@ -192,6 +192,12 @@ Document
 
 코드앤버터는 Node.js 기반의 Monorepo 프로젝트와 독립된 서비스로 구성되어 있습니다.
 
+<div class="no-shadow">
+
+![아키텍처](./imgs/how-to-work/arch.png)
+
+</div>
+
 ```
 ┌─ App (Monorepo / Node.js / Postgresql)
 │  ├─ apps
