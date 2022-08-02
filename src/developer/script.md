@@ -42,7 +42,7 @@ head:
 ```js
 var script = document.createElement("script");
 script.setAttribute("data-site-id", "SITE-ID");
-script.src = "https://test.buttr.dev/butter.js";
+script.src = "https://buttr.dev/butter.js";
 script.async = 1;
 document.head.appendChild(script);
 ```
