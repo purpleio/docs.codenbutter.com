@@ -1,4 +1,5 @@
 import baseConfig from "@subicura/vitepress-theme/config";
+import { generateSitemap as sitemap } from "sitemap-ts";
 
 const nav = [
   {
@@ -268,5 +269,13 @@ export default {
 
   vue: {
     reactivityTransform: true,
+  },
+
+  buildEnd: () => {
+    sitemap({
+      hostname: "https://docs.codenbutter.com",
+      outDir: ".vitepress/dist",
+      exclude: ["/404"],
+    });
   },
 };
