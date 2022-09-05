@@ -281,7 +281,8 @@ export default {
       links.push({
         // you might need to change this if not using clean urls mode
         url:
-          pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2") + ".html",
+          pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2") +
+          (pageData.relativePath.indexOf("index.md") > -1 ? "" : ".html"),
         lastmod: pageData.lastUpdated,
         changefreq: "daily",
         priority: 1.0,
