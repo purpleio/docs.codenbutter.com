@@ -1,5 +1,9 @@
+import { createWriteStream } from "node:fs";
+import { resolve } from "node:path";
+import { SitemapStream } from "sitemap";
 import baseConfig from "@subicura/vitepress-theme/config";
-import { generateSitemap as sitemap } from "sitemap-ts";
+
+const links = [];
 
 const nav = [
   {
@@ -79,6 +83,7 @@ export default {
   description: "코드앤버터 안내서 / codenbutter guide",
   srcDir: "src",
   scrollOffset: "header",
+  lastUpdated: true,
 
   base: "/",
 
@@ -271,11 +276,26 @@ export default {
     reactivityTransform: true,
   },
 
-  buildEnd: () => {
-    sitemap({
-      hostname: "https://docs.codenbutter.com",
-      outDir: ".vitepress/dist",
-      exclude: ["/404"],
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id)) {
+      links.push({
+        // you might need to change this if not using clean urls mode
+        url:
+          pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2") + ".html",
+        lastmod: pageData.lastUpdated,
+        changefreq: "daily",
+        priority: 1.0,
+      });
+    }
+  },
+
+  buildEnd: ({ outDir }) => {
+    const sitemap = new SitemapStream({
+      hostname: "https://docs.codenbutter.com/",
     });
+    const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
+    sitemap.pipe(writeStream);
+    links.forEach((link) => sitemap.write(link));
+    sitemap.end();
   },
 };

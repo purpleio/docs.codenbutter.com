@@ -12,7 +12,7 @@
   "dependencies": {
     "@subicura/vitepress-theme": "^1.0.7",
     "medium-zoom": "^1.0.6",
-    "sitemap-ts": "^1.0.0",
+    "sitemap": "^7.1.1",
     "vitepress": "v1.0.0-alpha.13",
     "vue": "^3.2.37"
   },
