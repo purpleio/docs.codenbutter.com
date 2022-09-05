@@ -13,9 +13,10 @@
     "@subicura/vitepress-theme": "^1.0.7",
     "medium-zoom": "^1.0.6",
     "vitepress": "v1.0.0-alpha.13",
-    "vue": "^3.2.31"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "terser": "^5.14.2"
   }
 }
