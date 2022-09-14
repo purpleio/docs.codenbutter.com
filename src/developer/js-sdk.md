@@ -43,8 +43,8 @@ Codenbutter SDK를 사용하려면 기본으로 제공되는 스크립트 대신
 | 속성        | 타입               | 설명                  | 필수 | 기본값 |
 | ----------- | ------------------ | --------------------- | ---- | ------ |
 | siteId      | string             | 사이트 아이디         | ✓    | -      |
-| auto        | boolean            | 팝업 호출 유무        |      | false  |
-| ignoreTrack | boolean            | 트래킹 실행 유무      |      | false  |
+| auto        | boolean            | 팝업 호출 여부        |      | false  |
+| ignoreTrack | boolean            | 트래킹 실행 여부      |      | false  |
 | onSuccess   | () => void         | 함수 호출 성공시 콜백 |      | -      |
 | onError     | (e: Error) => void | 함수 호출 실패시 콜백 |      | -      |
 
@@ -73,6 +73,9 @@ CodenButter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 | 속성      | 타입               | 설명                              | 필수 | 기본값 |
 | --------- | ------------------ | --------------------------------- | ---- | ------ |
 | id        | string             | 캠페인(팝업) 아이디 (없으면 전체) |      | -      |
+| ignoreCheckSchedule | boolean    | 스케줄 검사 무시 여부  |    | false  |
+| ignoreCheckTarget | boolean      | 노출 대상 검사 무시 여부      |      | false  |
+| ignoreExpired | boolean          | "다시보지않기" 검사 무시 여부      |      | false  |
 | onSuccess | () => void         | 함수 호출 성공시 콜백             |      | -      |
 | onError   | (e: Error) => void | 함수 호출 실패시 콜백             |      | -      |
 
