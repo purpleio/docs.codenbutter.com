@@ -52,7 +52,20 @@ head:
 
 2. 웹사이트 정보를 등록해 줍니다.
 
+- TYPE A]
+  > 팝업을 적용할 사이트 주소를 넣고 [다음] 버튼을 눌러주세요.
+
 ![사이트 생성](./imgs/create-campaign/section_3.png)
+
+- TYPE B]
+  > 사이트 주소를 나중에 입력하고 싶을 때 사용하는 기능입니다. <br/>
+  > TYPE A를 따라하신 경우라면 이 과정은 건너 뛰어주세요.
+
+![사이트 생성](./imgs/create-campaign/section_6.png)
+
+3. 사이트의 이미지를 등록하고, 사이트 명을 정해주고 [만들기] 버튼을 눌러줍니다.
+
+![사이트 생성](./imgs/create-campaign/section_7.png)
 
 ## 캠페인
 
@@ -69,4 +82,6 @@ head:
 
 ![캠페인 생성](./imgs/create-campaign/section_5.png)
 
-> [팝업 제작과정 알아보기](./select-template.md)
+### 다음 과정이 궁금해요
+
+> [템플릿에 대해 알아보기](./select-template.md)

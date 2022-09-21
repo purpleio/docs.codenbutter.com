@@ -53,22 +53,25 @@ function getGuideSidebar() {
       text: "사용 가이드",
       items: [
         { text: "개인정보 변경", link: "/guide/my-page" },
-        { text: "캠페인", link: "/guide/campaign" },
-        { text: "사이트", link: "/guide/site" },
-        { text: "팀", link: "/guide/team" },
+
         { text: "기본 사용법", link: "/guide/basic" },
         { text: "자주 묻는 질문", link: "/guide/faq" },
       ],
     },
-    // {
-    //   text: "주의사항",
-    //   items: [{ text: "로그인 연동 해제", link: "/guide/unlink-login" }],
-    // },
     {
       text: "에디터",
       items: [
         { text: "에디터 진입", link: "/guide/enter-editor" },
         { text: "템플릿 선택", link: "/guide/select-template" },
+      ],
+    },
+    {
+      text: "TODO",
+      items: [
+        { text: "캠페인", link: "/guide/campaign" },
+        { text: "사이트", link: "/guide/site" },
+        { text: "팀", link: "/guide/team" },
+        { text: "에디터 기능", link: "/guide/detail-editor" },
       ],
     },
   ];
