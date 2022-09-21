@@ -14,7 +14,7 @@ head:
       content: 코드앤버터 팀
 ---
 
-# 팀
+# 팀 (TODO)
 
 ::: info
 팀에 대한 설명
