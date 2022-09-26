@@ -83,4 +83,4 @@ head:
 
 ## 다음 과정이 궁금해요
 
-> [팝업 제작과정 알아보기](./enter-editor.md)
+> [에디터 사용 알아보기](./enter-editor.md)
