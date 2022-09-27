@@ -64,7 +64,7 @@ CodenButter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 ### mount
 
 팝업을 수동으로 호출합니다.  
-조건에 따라 팝업을 노출/비노출할때 사용합니다.
+조건에 따라 팝업을 노출/비노출할 때 사용합니다.
 
 **옵션**
 
