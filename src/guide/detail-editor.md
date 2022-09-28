@@ -25,13 +25,17 @@ TODO:
 
 노드방향
 배경이미지 변경
-색상필터
 데이터 목록관리
 이벤트 추가
-
-공개
-노출위치
 애니메이션
+
+
+
+전체 검색으로 TODO 찾아보기 + 팀 사이트
+자주묻는 질문
+어투
+링크 연결잘되는지
+이미지 순서
  -->
 
 <br/>
@@ -258,3 +262,81 @@ TODO:
 2. 요소가 가운데로 정렬된 모습을 확인 할 수 있습니다.
 
 ![가운데 배치](./imgs/detail-editor/section_34.png)
+
+## 색상 필터
+
+1. 정렬하고자하는 요소를 선택해주고 [노드 정렬]에서 표시한 부분을 눌러줍니다.
+
+![색상 필터](./imgs/detail-editor/section_35.png)
+
+2. 빨간색 영역을 눌러 색상값을 입력하거나 파란색을 눌러 색상 팔레트에서 원하는 색상을 선택할 수 있습니다.
+
+![색상 선택](./imgs/detail-editor/section_36.png)
+
+![색상 팔레트](./imgs/detail-editor/section_37.png)
+
+## 노출 위치
+
+1. [공개 설정]을 눌러 미리보기 화면으로 이동합니다.
+
+![공개 설정](./imgs/detail-editor/section_10.png)
+
+2. [노출 위치] 영역을 누르고 나면 보이는 목록에서 원하는 위치를 선택해 줍니다.
+
+![노출 위치](./imgs/detail-editor/section_38.png)
+
+![노출 위치](./imgs/detail-editor/section_39.png)
+
+3. 위치 선택을 하고난 후에는 [가로 조정]과 [세로 조정] 값을 변경해주면 팝업을 원하는 위치에 정밀하게 배치할 수 있습니다.
+
+![노출 위치](./imgs/detail-editor/section_40.png)
+
+## 공개
+
+1. [공개 설정]을 눌러 미리보기 화면으로 이동합니다.
+
+![공개 설정](./imgs/detail-editor/section_10.png)
+
+2. 우측 하단에 위치한 [공개]를 누릅니다.
+
+![공개](./imgs/detail-editor/section_41.png)
+
+3. 캠페인 목록 페이지로 이동하면 해당 팝업이 [사용중]인 상태로 변경된 것을 확인 할 수 있습니다.
+
+![사용중](./imgs/detail-editor/section_42.png)
+
+## 사용 중지
+
+1. 캠페인 목록 페이지로 이동해서 사용 중지하고 싶은 항목을 선택합니다.
+
+![목록](./imgs/detail-editor/section_43.png)
+
+2. [사용중]으로 표시된 곳을 누릅니다.
+
+![사용유무](./imgs/detail-editor/section_44.png)
+
+3. 모달창에서 [중지]를 누릅니다.
+
+![즁지](./imgs/detail-editor/section_45.png)
+
+4. 해당 팝업이 [미사용]인 상태로 변경된 것을 확인 할 수 있습니다.
+
+![미사용](./imgs/detail-editor/section_46.png)
+
+## 삭제
+
+- 팝업을 삭제하기 보다 사이트에 노출되지 않도록 비활성화 하고 싶다면 [[사용 중지]](./detail-editor.md#사용-중지) 내용을 참고해주세요.
+
+1. 캠페인 디테일 페이지에서 [더 보기] 아이콘을 누릅니다.
+
+![더 보기](./imgs/detail-editor/section_49.png)
+
+2. [삭제하기]를 누릅니다.
+
+![삭제](./imgs/detail-editor/section_50.png)
+
+2. 모달창에서 [삭제]를 누릅니다.
+
+![삭제](./imgs/detail-editor/section_51.png)
+
+## 애니메이션
