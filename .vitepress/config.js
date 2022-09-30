@@ -63,6 +63,7 @@ function getGuideSidebar() {
       items: [
         { text: "에디터 진입", link: "/guide/enter-editor" },
         { text: "템플릿 선택", link: "/guide/select-template" },
+        { text: "팝업 디자인하기", link: "/guide/detail-editor" },
       ],
     },
     {
@@ -70,7 +71,6 @@ function getGuideSidebar() {
       items: [
         { text: "사이트", link: "/guide/site" },
         { text: "팀", link: "/guide/team" },
-        { text: "팝업 디자인하기", link: "/guide/detail-editor" },
       ],
     },
   ];

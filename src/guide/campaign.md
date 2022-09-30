@@ -53,71 +53,71 @@ head:
 
 - 별다른 옵션 조건을 추가하지 않은 상태에서는 기본적으로 홈 경로에 대해서만 팝업을 노출하고 있습니다.
 
-![스케줄 설정](./imgs/campaign/section_31.png)
+![홈](./imgs/campaign/section_31.png)
 
 #### 모든 페이지에 팝업을 노출하고 싶어요
 
 - [노출 대상 설정] >> [페이지]에서 [홈]을 제거해준 후 저장을 누릅니다.
 
-![스케줄 설정](./imgs/campaign/section_32.png)
+![제거](./imgs/campaign/section_32.png)
 
 - 모든 페이지에서 노출되도록 설정이 변경됩니다.
 
-![스케줄 설정](./imgs/campaign/section_33.png)
+![노출 페이지](./imgs/campaign/section_33.png)
 
 #### 페이지 경로를 잘못 입력한 경우
 
-![스케줄 설정](./imgs/campaign/section_36.png)
+![잘못된 기입](./imgs/campaign/section_36.png)
 
 #### 페이지 경로를 올바르게 입력한 경우
 
 > 홈 경로를 제외하고 /로 시작하는 형식으로 입력해주세요.
 
-![스케줄 설정](./imgs/campaign/section_37.png)
+![올바른 기입](./imgs/campaign/section_37.png)
 
 #### 페이지 경로에 조건을 주어 설정하고 싶은 경우
 
 - [일치]를 눌러서 원하는 옵션을 선택해줍니다.
 
-![스케줄 설정](./imgs/campaign/section_38.png)
+![조건](./imgs/campaign/section_38.png)
 
 #### 페이지 경로를 여러개 입력하고 싶은 경우
 
 - [+ 추가] 버튼을 눌러 새로운 페이지 경로를 입력해줍니다.
 - 우측에 노란색으로 표시한 [- 아이콘]을 누르면 기존 페이지 경로를 제거할 수 있습니다.
 
-![스케줄 설정](./imgs/campaign/section_39.png)
+![멀티 경로](./imgs/campaign/section_39.png)
 
 #### 특정 페이지에 팝업을 노출하고 싶어요
 
 - [+ 추가]를 누릅니다.
 
-![스케줄 설정](./imgs/campaign/section_34.png)
+![추가](./imgs/campaign/section_34.png)
 
 - [직접 입력]을 누릅니다.
 
-![스케줄 설정](./imgs/campaign/section_35.png)
+![직접 입력](./imgs/campaign/section_35.png)
 
 ### TYPE B] 서비스 연동을 사용하는 경우
 
-![스케줄 설정](./imgs/campaign/section_29.png)
+![서비스 연동](./imgs/campaign/section_29.png)
 
 - 아래 이미지에 해당하는 서비스를 이용해서 만든 웹사이트를 사용할 경우, <br/>
   노출 페이지에 대해 직접 입력하는 번거로움을 덜어드리고자 노출 페이지 설정을 옵션에서 선택하는 방식으로 제공해드리고 있습니다.
 
-![스케줄 설정](./imgs/campaign/section_30.png)
+![페이지 목록](./imgs/campaign/section_30.png)
 
 ### 브라우저 식별 정보
 
 - 브라우저 식별 정보는 웹 개발에 대한 배경지식이 있는 사용자를 위한 고급기능으로 브라우저, 접속 기기 등 사이트 방문자를 식별하고자 할때 사용합니다.
 
-![스케줄 설정](./imgs/campaign/section_40.png)
+![추가](./imgs/campaign/section_40.png)
 
 #### 활용방법
 
-- 팝업에서 airbridge를 통해 앱 다운로드 기능을 제공하고 있는데 이 경우, 모바일 유저인지 데스크톱 유저인지를 브라우저 식별 정보를 이용해 구분해서 팝업을 노출 시킬 수 있습니다.
+- 팝업에서 Airbridge를 통해 앱 다운로드 기능을 제공하고 있는데 이 경우, 모바일 유저인지 데스크톱 유저인지를 브라우저 식별 정보를 이용해 구분해서 팝업을 노출 시킬 수 있습니다.
 
-![스케줄 설정](./imgs/campaign/section_41.png)
+![Airbridge](./imgs/campaign/section_41.png)
 
 > 에디터 화면에서 자세히 알아보기 버튼에 [airbridge] 기능이 적용되있는 모습
 
