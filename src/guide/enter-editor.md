@@ -54,4 +54,4 @@ head:
 
 ## 다음 과정이 궁금해요
 
-> [에디터 기능 알아보기](./detail-editor.md)
+> [팝업 디자인하는 방법 알아보기](./detail-editor.md)

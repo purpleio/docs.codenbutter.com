@@ -70,7 +70,7 @@ function getGuideSidebar() {
       items: [
         { text: "사이트", link: "/guide/site" },
         { text: "팀", link: "/guide/team" },
-        { text: "에디터 기능", link: "/guide/detail-editor" },
+        { text: "팝업 디자인하기", link: "/guide/detail-editor" },
       ],
     },
   ];

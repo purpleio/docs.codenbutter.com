@@ -8,16 +8,16 @@ head:
       content: https://docs.codenbutter.com/guide/detail-editor.html
   - - meta
     - property: "og:description"
-      content: 코드앤버터 에디터 기능
+      content: 코드앤버터 팝업 디자인하기
   - - meta
     - name: "twitter:description"
-      content: 코드앤버터 에디터 기능
+      content: 코드앤버터 팝업 디자인하기
 ---
 
-# 에디터 기능
+# 팝업 디자인하기
 
 ::: info
-에디터는 팝업의 디자인과 콘텐츠를 편집하기 위해 다양한 편집 도구들이 갖추어진 페이지 입니다.
+에디터 화면은 팝업의 디자인과 콘텐츠를 편집하기 위해 다양한 편집 도구들이 갖추어진 공간 입니다.
 :::
 
 <!--
@@ -55,14 +55,14 @@ TODO:
 - 멤버권한 변경, 멤버삭제 추가하는 내용 필요
 
 
-## 채널톡]
-- 채널톡 사용법
+
 
 =========================
 
 자주묻는 질문 (2차작업)
 링크 연결잘되는지 확인
 이미지 파일 순서 정리
+채널톡 사용법
  -->
 
 <br/>
