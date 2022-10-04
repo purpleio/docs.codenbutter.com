@@ -14,7 +14,7 @@ head:
       content: 코드앤버터 사이트
 ---
 
-# 사이트 (TODO)
+# 사이트
 
 ::: info
 
