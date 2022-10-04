@@ -2,10 +2,10 @@
 head:
   - - meta
     - property: "og:url"
-      content: https://docs.codenbutter.com/guide/team.html
+      content: https://docs.codenbutter.com/guide/my-page.html
   - - meta
     - name: "twitter:url"
-      content: https://docs.codenbutter.com/guide/team.html
+      content: https://docs.codenbutter.com/guide/my-page.html
   - - meta
     - property: "og:description"
       content: 코드앤버터 개인정보 변경
@@ -16,11 +16,11 @@ head:
 
 # 개인정보 변경
 
-1. 우측 상단의 프로필 아이콘을 눌러줍니다.
+1. 우측 상단의 프로필 아이콘을 눌러주세요.
 
 ![마이페이지](./imgs/my-page/section_1.png)
 
-2. 서브메뉴에서 내 프로필을 눌러줍니다.
+2. 서브메뉴에서 내 프로필을 눌러주세요.
 
 ![프로필 서브 메뉴](./imgs/my-page/section_2.png)
 
@@ -30,7 +30,7 @@ head:
 
 ## 프로필 변경
 
-- 프로필 아이콘을 누른 후 이미지를 업로드하고 나서 저장 버튼을 눌러줍니다.
+- 프로필 아이콘을 누른 후 이미지를 업로드하고 나서 저장 버튼을 눌러주세요.
 
 ![프로필 변경](./imgs/my-page/section_4.png)
 

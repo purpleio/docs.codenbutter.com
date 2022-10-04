@@ -30,7 +30,7 @@ head:
 ## 팀 생성
 
 - 처음 로그인을 하면 팀을 생성하는 페이지로 이동됩니다.
-- 팀 이름을 입력하고 만들기를 눌러줍니다.
+- 팀 이름을 입력하고 만들기를 눌러주세요.
 
 ![팀 생성](./imgs/create-campaign/section_1.png)
 
@@ -40,14 +40,14 @@ head:
 
 ## 사이트 생성
 
-1. 웹사이트 추가하기 버튼을 눌러 줍니다.
+1. 웹사이트 추가하기 버튼을 눌러주세요.
 
 ![사이트 생성](./imgs/create-campaign/section_2.png)
 
-2. 웹사이트 정보를 등록해 줍니다.
+2. 웹사이트 정보를 등록해주세요.
 
 - TYPE A]
-  > 팝업을 적용할 사이트 주소를 넣고 [다음] 버튼을 눌러주세요.
+  > 팝업을 적용할 사이트 주소를 넣고 다음 버튼을 눌러주세요.
 
 ![사이트 생성](./imgs/create-campaign/section_3.png)
 
@@ -55,11 +55,11 @@ head:
   > 사이트 주소를 나중에 입력하고 싶을 때 사용하는 기능입니다. <br/>
   > TYPE A를 따라하신 경우라면 이 과정은 건너 뛰어주세요.
 
-![사이트 생성](./imgs/create-campaign/section_6.png)
+![사이트 생성](./imgs/create-campaign/section_4.png)
 
-3. 사이트의 이미지를 등록하고, 사이트 명을 정해주고 [만들기] 버튼을 눌러줍니다.
+3. 사이트의 이미지를 등록하고, 사이트 명을 정해주고 만들기 버튼을 눌러주세요.
 
-![사이트 생성](./imgs/create-campaign/section_7.png)
+![사이트 생성](./imgs/create-campaign/section_5.png)
 
 <br/>
 
@@ -72,13 +72,13 @@ head:
 
 ### 캠페인 생성
 
-1. 팝업 만들기 버튼을 눌러 줍니다.
+1. 팝업 만들기 버튼을 눌러주세요.
 
-![캠페인 생성](./imgs/create-campaign/section_4.png)
+![캠페인 생성](./imgs/create-campaign/section_6.png)
 
-2. 팝업 정보를 작성해 줍니다.
+2. 팝업 정보를 작성해주세요.
 
-![캠페인 생성](./imgs/create-campaign/section_5.png)
+![캠페인 생성](./imgs/create-campaign/section_7.png)
 
 ### 다음 과정이 궁금해요
 
