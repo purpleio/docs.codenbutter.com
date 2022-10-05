@@ -69,6 +69,10 @@ function getGuideSidebar() {
         { text: "팝업 디자인하기", link: "/guide/detail-editor" },
       ],
     },
+    {
+      text: "플러그인",
+      items: [{ text: "Airbridge", link: "/guide/airbridge" }],
+    },
   ];
 }
 
