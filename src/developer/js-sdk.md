@@ -70,15 +70,16 @@ CodenButter("boot", { siteId: "SITE-ID", ignoreTrack: true });
 
 <div class="table-wrapper">
 
-| 속성                    | 타입               | 설명                              | 필수 | 기본값 |
-| ----------------------- | ------------------ | --------------------------------- | ---- | ------ |
-| id                      | string             | 캠페인(팝업) 아이디 (없으면 전체) |      | -      |
-| ignoreCheckSchedule     | boolean            | 스케줄 검사 무시 여부             |      | false  |
-| ignoreCheckTarget       | boolean            | 노출 대상 검사 무시 여부          |      | false  |
-| ignoreExpired           | boolean            | "다시보지않기" 검사 무시 여부     |      | false  |
-| ignoreSpaLocationChange | boolean            | SPA 페이지 이동 무시 여부         |      | false  |
-| onSuccess               | () => void         | 함수 호출 성공시 콜백             |      | -      |
-| onError                 | (e: Error) => void | 함수 호출 실패시 콜백             |      | -      |
+| 속성                    | 타입                | 설명                              | 필수 | 기본값 |
+| ----------------------- | ------------------- | --------------------------------- | ---- | ------ |
+| id                      | string              | 캠페인(팝업) 아이디 (없으면 전체) |      | -      |
+| ignoreCheckSchedule     | boolean             | 스케줄 검사 무시 여부             |      | false  |
+| ignoreCheckTarget       | boolean             | 노출 대상 검사 무시 여부          |      | false  |
+| ignoreExpired           | boolean             | "다시보지않기" 검사 무시 여부     |      | false  |
+| ignoreSpaLocationChange | boolean             | SPA 페이지 이동 무시 여부         |      | false  |
+| excludedCampaignIds     | Array&lt;string&gt; | 캠페인 노출 제외 대상 설정        |      | []     |
+| onSuccess               | () => void          | 함수 호출 성공시 콜백             |      | -      |
+| onError                 | (e: Error) => void  | 함수 호출 실패시 콜백             |      | -      |
 
 </div>
 
@@ -88,4 +89,7 @@ CodenButter("mount");
 
 // 특정 캠페인 호출
 CodenButter("mount", { id: "CAMPAIGN-ID" });
+
+// 캠페인 노출 제외 대상 설정
+CodenButter("mount", { excludedCampaignIds: ["CAMPAIGN-ID"] });
 ```
