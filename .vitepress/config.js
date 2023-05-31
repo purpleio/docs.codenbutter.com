@@ -43,11 +43,35 @@ function getGuideSidebar() {
       ],
     },
     {
+      text: "튜토리얼",
+      items: [
+        { text: "회원가입", link: "/guide/sign-up" },
+        { text: "캠페인 만들기", link: "/guide/create-campaign" },
+      ],
+    },
+    {
       text: "사용 가이드",
       items: [
+        { text: "팀", link: "/guide/team" },
+        { text: "사이트", link: "/guide/site" },
+        { text: "개인정보 변경", link: "/guide/my-page" },
+        { text: "캠페인", link: "/guide/campaign" },
         { text: "기본 사용법", link: "/guide/basic" },
         { text: "자주 묻는 질문", link: "/guide/faq" },
+        { text: "스크립트 설치", link: "/guide/install-script" },
       ],
+    },
+    {
+      text: "에디터",
+      items: [
+        { text: "에디터 진입", link: "/guide/enter-editor" },
+        { text: "템플릿 선택", link: "/guide/select-template" },
+        { text: "팝업 디자인하기", link: "/guide/detail-editor" },
+      ],
+    },
+    {
+      text: "플러그인",
+      items: [{ text: "Airbridge", link: "/guide/airbridge" }],
     },
   ];
 }
@@ -242,11 +266,6 @@ export default {
       // { icon: "twitter", link: "https://twitter.com/subicura" },
       { icon: "blog", link: "https://codenbutter.com" },
     ],
-
-    editLink: {
-      repo: "purpleio/docs.codenbutter.com",
-      text: "Edit this page on GitHub",
-    },
 
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} purpleio`,
