@@ -45,7 +45,8 @@ function getGuideSidebar() {
     {
       text: "사용 가이드",
       items: [
-        { text: "기본 사용법", link: "/guide/basic" },
+        { text: "팝업 사용하기", link: "/guide/basic" },
+        { text: "인스타그램 피드 사용하기", link: "/guide/basic-instagram" },
         { text: "자주 묻는 질문", link: "/guide/faq" },
       ],
     },
