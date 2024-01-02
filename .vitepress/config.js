@@ -70,6 +70,12 @@ function getDeveloperSidebar() {
       ],
     },
     {
+      text: "Admin Embedded",
+      items: [
+        { text: "관리자 페이지 연동", link: "/developer/admin-embedded" },
+      ],
+    },
+    {
       text: "채용",
       items: [{ text: "채용 안내", link: "/developer/recruit" }],
     },
