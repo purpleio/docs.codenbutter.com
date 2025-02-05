@@ -67,6 +67,7 @@ function getDeveloperSidebar() {
       items: [
         { text: "스크립트 추가", link: "/developer/script" },
         { text: "Javascript SDK", link: "/developer/js-sdk" },
+        { text: "Segment 활용하기", link: "/developer/segment" },
       ],
     },
     {
